@@ -19,7 +19,7 @@
         top: 0;
     }
     
-    #main #gallery #contact{
+    #main, #gallery, #contact{
        height: 100%; 
     }
 }
