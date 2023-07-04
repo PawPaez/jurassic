@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jurassic Park</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/Icono.png" type="image/x-icon">
+</head>
+
+<body class="font-sans bg-gray-100">
+    <header id="header" class="w-full bg-green-600 text-white px-4 flex items-center justify-between">
+        <div class="md:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                class="h-6 w-6">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                </path>
+            </svg>
+        </div>
+        <img src="images/Icono.png" alt="Logo Jurassic Park" class="h-24">
+        <nav id="navbar">
+            <a href="#header" class="text-white hover:text-gray-200 ml-3">Home</a>
+            <a href="#main" class="text-white hover:text-gray-200 ml-3">Info</a>
+            <a href="#gallery" class="text-white hover:text-gray-200 ml-3">Galería</a>
+            <a href="#contact" class="text-white hover:text-gray-200 ml-3">Contacto</a>
+        </nav>
+    </header>
+    <main id="main" class="w-full bg-white p-4 flex flex-col items-center justify-center">
+        <h2 class="text-2xl text-center mb-4">Jurassic Park (1993)</h2>
+        <div class="prose max-w-none mx-auto">
+            <img class="float-left mr-4 mb-2 w-64" src="images/T-rex.png" alt="T-Rex de Jurassic Park">
+
+            <p>Jurassic Park es una película de ciencia ficción y aventuras dirigida por Steven Spielberg. Está basada
+                en la novela homónima de Michael Crichton, que también co-escribió el guión de la película. La película
+                se centra en la ficticia Isla Nublar, cerca de Costa Rica, donde un multimillonario filántropo y un
+                pequeño equipo de genetistas han creado un parque de atracciones con dinosaurios vivos. Cuando todo sale
+                mal, los visitantes deben luchar para sobrevivir contra las criaturas prehistóricas. En el camino, se
+                encuentran con el infame Tyrannosaurus rex, una de las estrellas más memorables de la película.</p>
+        </div>
+    </main>
+
+    <section id="gallery" class="flex flex-wrap bg-gray-100 p-4">
+        <h3 class="w-full text-center font-bold mb-1">Algunas imagenes de la peli</h3>
+        <div class="flex space-x-4 overflow-x-scroll">
+            <img class="h-64 md:h-auto md:w-1/3 object-cover" src="images/galeria/Imagen1.jpeg" alt="Imagen 1">
+            <img class="h-64 md:h-auto md:w-1/3 object-cover" src="images/galeria/Imagen2.jpeg" alt="Imagen 2">
+            <img class="h-64 md:h-auto md:w-1/3 object-cover" src="images/galeria/Imagen3.jpg" alt="Imagen 3">
+            <img class="h-64 md:h-auto md:w-1/3 object-cover" src="images/galeria/Imagen4.jpeg" alt="Imagen 4">
+            <img class="h-64 md:h-auto md:w-1/3 object-cover" src="images/galeria/Imagen5.jpeg" alt="Imagen 5">
+        </div>
+    </section>
+
+    <section id="contact" class="w-full bg-white px-4 my-10 flex flex-col items-center justify-center">
+        <h2 class="text-2xl mt-2 mb-4">Contáctanos</h2>
+
+        <form class="w-full">
+            <div class="flex flex-col mb-4">
+                <label for="name" class="mb-2">Nombre:</label>
+                <input id="name" type="text" class="border p-2">
+            </div>
+
+            <div class="flex flex-col mb-4">
+                <label for="email" class="mb-2">Correo electrónico:</label>
+                <input id="email" type="email" class="border p-2">
+            </div>
+
+            <div class="flex flex-col mb-4">
+                <label for="message" class="mb-2">Mensaje:</label>
+                <textarea id="message" type="text" class="border p-2"> </textarea>
+            </div>
+
+            <button type="submit" class="bg-green-600 text-white p-2 rounded">Enviar</button>
+        </form>
+    </section>
+
+    <footer class="w-full h-20 bg-green-600 text-white flex items-center justify-center">
+        <p>© 2023 Jurassic Park</p>
+    </footer>
+
+
+</body>
+
+</html>

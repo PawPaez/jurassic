@@ -1,0 +1,21 @@
+@media (max-width: 640px) {
+    #navbar {
+        display: none;
+        position: absolute;
+        background-color: #81c784;
+        right: -5%;
+        margin: 0;
+        width: 80%;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    #navbar a {
+        display: block;
+    }
+
+    #header:hover #navbar {
+        display: flex;
+        top: 0;
+    }
+}
