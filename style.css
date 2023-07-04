@@ -20,6 +20,6 @@
     }
     
     #main, #gallery, #contact{
-       height: 100%; 
+       height: 1vh; 
     }
 }
