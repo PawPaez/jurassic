@@ -18,4 +18,8 @@
         display: flex;
         top: 0;
     }
+    
+    #main #gallery #contact{
+       height: 100%; 
+    }
 }
